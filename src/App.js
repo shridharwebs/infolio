@@ -1,13 +1,12 @@
 import React, { Fragment } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import Mainmenu from "./layouts/Mainmenu";
+import Home from "./components/Home";
 
 function App() {
   return (
     <Fragment>
-      <center>
-        <h3>Comming soon...</h3>
-      </center>
+      <Mainmenu></Mainmenu>
+      <Home></Home>
     </Fragment>
   );
 }
