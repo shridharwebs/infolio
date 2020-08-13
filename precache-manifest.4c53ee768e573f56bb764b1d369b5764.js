@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d413013af768ed8dcd36cf895878de73",
+    "revision": "0bc13148cea81ddbede2d5c9c1312070",
     "url": "/infolio/index.html"
   },
   {
-    "revision": "3f54d1ce56e5292b2721",
+    "revision": "e02775d6ded51491dcf7",
     "url": "/infolio/static/css/2.f3cffc9e.chunk.css"
   },
   {
-    "revision": "a5f1d3a8565018327d14",
-    "url": "/infolio/static/css/main.d0cdada3.chunk.css"
+    "revision": "ffbd4c998caa8ff71c44",
+    "url": "/infolio/static/css/main.bb0ab92b.chunk.css"
   },
   {
-    "revision": "3f54d1ce56e5292b2721",
-    "url": "/infolio/static/js/2.7d73e06c.chunk.js"
+    "revision": "e02775d6ded51491dcf7",
+    "url": "/infolio/static/js/2.52593340.chunk.js"
   },
   {
     "revision": "d3031346469a8a2ef527f1ad705ea3b7",
-    "url": "/infolio/static/js/2.7d73e06c.chunk.js.LICENSE.txt"
+    "url": "/infolio/static/js/2.52593340.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a5f1d3a8565018327d14",
-    "url": "/infolio/static/js/main.a255fd34.chunk.js"
+    "revision": "ffbd4c998caa8ff71c44",
+    "url": "/infolio/static/js/main.7fccf958.chunk.js"
   },
   {
     "revision": "8c931c911d5c0cddc031",
