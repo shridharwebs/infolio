@@ -7,6 +7,7 @@ import Categories from "./components/Categories";
 import Support from "./components/Support";
 import Page404 from "./layouts/Page404";
 import "./App.css";
+import BlogView from "./components/BlogView";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/blogs" component={Blogs}></Route>
           <Route exact path="/categories" component={Categories}></Route>
           <Route exact path="/support" component={Support}></Route>
+          <Route exact path="/blogview" component={BlogView}></Route>
           <Route component={Page404}></Route>
         </Switch>
       </Router>

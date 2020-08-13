@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 import "../components/Home.scss";
 import jQuery from "jquery";
 
@@ -6,12 +7,12 @@ const Home = () => {
   return (
     <Fragment>
       <main>
-        <section id="content" class="content">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-1"></div>
+        <section id="content" className="content">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-1"></div>
 
-              <div class="col-md-6 container-fluid blogs">
+              <div className="col-md-6 container-fluid blogs">
                 {/* ========== Search query section ====== */}
                 <section id="Searchbox" className="searchbox">
                   <input
@@ -27,20 +28,19 @@ const Home = () => {
 
                 {/* ========== Blog box ====== */}
                 <div className="blogbox">
-                  <a href="#">
+                  <Link to="/blogview">
                     <img src={require("../assets/img/code-pad.jpg")}></img>
-                  </a>
+                  </Link>
                   <div className="blogdesc">
                     <h4>
-                      Etiam elementum lectus et tempor molestie. Pellentesque
+                      <Link to="/blogview">
+                        What is Coding? - Computer Science Degree Hub
+                      </Link>
                     </h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Integer nec elit ex. Etiam elementum lectus et tempor
-                      molestie. Pellentesque vestibulum dui sit amet dui
-                      volutpat sollicitudin. Etiam non erat finibus, iaculis
-                      nunc vel, convallis eros. Etiam efficitur tempor dui,
-                      vitae fringilla ipsum tristique quis.
+                      Coding is basically the computer language used to develop
+                      apps, websites, and software. Without it, we'd have none
+                      of the most popular technology.
                     </p>
                     <div className="blog-statusbox">
                       <a href="#">
@@ -64,12 +64,14 @@ const Home = () => {
 
                 {/* ========== Blog box ====== */}
                 <div className="blogbox">
-                  <a href="#">
+                  <Link to="/blogview">
                     <img src={require("../assets/img/4.jpg")}></img>
-                  </a>
+                  </Link>
                   <div className="blogdesc">
                     <h4>
-                      Etiam elementum lectus et tempor molestie. Pellentesque
+                      <Link to="/blogview">
+                        What is Coding? - Computer Science Degree Hub
+                      </Link>
                     </h4>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -99,7 +101,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-md-2 sidefield">
+              <div className="col-md-2 sidefield">
                 <img src={require("../assets/img/code-pad.jpg")}></img>
               </div>
             </div>
