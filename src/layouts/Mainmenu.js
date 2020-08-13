@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import "../layouts/Mainmenu.css";
+import "../layouts/Mainmenu.scss";
 
 const Mainmenu = () => {
   return (
@@ -7,7 +7,7 @@ const Mainmenu = () => {
       <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container">
           <a href="#" class="navbar-brand">
-            Infolio
+            <img src={require("../assets/img/1.png")}></img>CodeBugi
           </a>
           <button
             type="button"
