@@ -35,10 +35,10 @@ const Mainmenu = () => {
               </li>
               <li>
                 <Link to="/categories" className="nav-item nav-link">
-                  Recent Blogs
+                  Categories
                 </Link>
               </li>
-              <li className="dropdown">
+              <li className="dropdown hidden hide">
                 <Link
                   to="/categories"
                   className="nav-item nav-link"
