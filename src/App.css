@@ -1,3 +1,6 @@
 body {
   background-color: #eee !important;
+  font-family: "SamsungOneLatin", "SamsungOne", "SamsungOneKorean",
+    "SamsungSharpSans", Arial, Roboto, "Helvetica Neue", "Apple SD Gothic Neo",
+    sans-serif;
 }

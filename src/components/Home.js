@@ -9,39 +9,98 @@ const Home = () => {
         <section id="content" class="content">
           <div class="container">
             <div class="row">
-              <div class="col-md-8 blogs">
+              <div class="col-md-1"></div>
+
+              <div class="col-md-6 container-fluid blogs">
+                {/* ========== Search query section ====== */}
                 <section id="Searchbox" className="searchbox">
-                  <input type="text" className="form-control"></input>
-                  <br />
-                  <br />
-                  <br />
+                  <input
+                    type="text"
+                    placeholder="Search your query here..."
+                    className="form-control"
+                  />
+                  <img
+                    className="searchbox-icon-btn"
+                    src={require("../assets/ico/search.png")}
+                  ></img>
                 </section>
-                <img src={require("../assets/img/23.jpg")}></img>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer nec elit ex. Etiam elementum lectus et tempor
-                  molestie. Pellentesque vestibulum dui sit amet dui volutpat
-                  sollicitudin. Etiam non erat finibus, iaculis nunc vel,
-                  convallis eros. Etiam efficitur tempor dui, vitae fringilla
-                  ipsum tristique quis. Aliquam erat volutpat. Cras ullamcorper
-                  ex et viverra vulputate. Nam lectus ligula, pretium nec risus
-                  nec, ultricies fringilla mauris. Proin quis venenatis neque,
-                  iaculis porta nulla.{" "}
-                </p>
+
+                {/* ========== Blog box ====== */}
+                <div className="blogbox">
+                  <a href="#">
+                    <img src={require("../assets/img/code-pad.jpg")}></img>
+                  </a>
+                  <div className="blogdesc">
+                    <h4>
+                      Etiam elementum lectus et tempor molestie. Pellentesque
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Integer nec elit ex. Etiam elementum lectus et tempor
+                      molestie. Pellentesque vestibulum dui sit amet dui
+                      volutpat sollicitudin. Etiam non erat finibus, iaculis
+                      nunc vel, convallis eros. Etiam efficitur tempor dui,
+                      vitae fringilla ipsum tristique quis.
+                    </p>
+                    <div className="blog-statusbox">
+                      <a href="#">
+                        <b>
+                          45.256 <small>Views</small>
+                        </b>
+                      </a>
+                      <a href="#">
+                        <b>
+                          45.256 <small>Comments</small>
+                        </b>
+                      </a>
+                      <a href="#">
+                        <b>
+                          45.256 <small>Likes</small>
+                        </b>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* ========== Blog box ====== */}
+                <div className="blogbox">
+                  <a href="#">
+                    <img src={require("../assets/img/4.jpg")}></img>
+                  </a>
+                  <div className="blogdesc">
+                    <h4>
+                      Etiam elementum lectus et tempor molestie. Pellentesque
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Integer nec elit ex. Etiam elementum lectus et tempor
+                      molestie. Pellentesque vestibulum dui sit amet dui
+                      volutpat sollicitudin. Etiam non erat finibus, iaculis
+                      nunc vel, convallis eros. Etiam efficitur tempor dui,
+                      vitae fringilla ipsum tristique quis.
+                    </p>
+                    <div className="blog-statusbox">
+                      <a href="#">
+                        <b>
+                          45.256 <small>Views</small>
+                        </b>
+                      </a>
+                      <a href="#">
+                        <b>
+                          45.256 <small>Comments</small>
+                        </b>
+                      </a>
+                      <a href="#">
+                        <b>
+                          45.256 <small>Likes</small>
+                        </b>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-4 sidefield">
-                <img src={require("../assets/img/23.jpg")}></img>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer nec elit ex. Etiam elementum lectus et tempor
-                  molestie. Pellentesque vestibulum dui sit amet dui volutpat
-                  sollicitudin. Etiam non erat finibus, iaculis nunc vel,
-                  convallis eros. Etiam efficitur tempor dui, vitae fringilla
-                  ipsum tristique quis. Aliquam erat volutpat. Cras ullamcorper
-                  ex et viverra vulputate. Nam lectus ligula, pretium nec risus
-                  nec, ultricies fringilla mauris. Proin quis venenatis neque,
-                  iaculis porta nulla.{" "}
-                </p>
+              <div class="col-md-2 sidefield">
+                <img src={require("../assets/img/code-pad.jpg")}></img>
               </div>
             </div>
           </div>

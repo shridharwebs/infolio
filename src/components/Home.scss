@@ -1,27 +1,114 @@
-body {
-  font-family: "SamsungOneLatin", "SamsungOne", "SamsungOneKorean",
-    "SamsungSharpSans", Arial, Roboto, "Helvetica Neue", "Apple SD Gothic Neo",
-    sans-serif;
-}
+.content {
+  .searchbox {
+    margin: 40px auto;
+    input {
+      border-radius: 0;
+      border-color: #eee;
+      line-height: 55px;
+      height: 55px;
+    }
+    .searchbox-icon-btn {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      top: 55px;
+      right: 10px;
+    }
+  }
 
-p {
-  margin-bottom: 0.5em;
-  font-size: 1.6rem;
-  line-height: 1.6;
-}
-.button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 8px 25px;
-  border-radius: 4px;
-}
+  .blogbox {
+    margin-bottom: 3rem;
+  }
 
-.blogs img {
-  width: 100%;
-  height: 250px;
-}
+  .blogs {
+    padding: 0 !important;
 
-.sidefield img {
-  width: 100%;
-  height: 250px;
+    img {
+      width: 100%;
+      height: 300px;
+    }
+
+    .blogdesc {
+      border: 0px solid #ccc;
+      padding: 10px 10px 20px 10px;
+      background-color: #fefefe;
+      h4 {
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+        padding: 15px 10px !important;
+      }
+      p {
+        line-height: 1.7rem;
+        padding: 0 10px;
+      }
+      .blog-statusbox {
+        padding: 10px;
+        a {
+          color: #333;
+          display: inline-block;
+          &:last-child,
+          &:nth-child(2) {
+            padding: 0px 15px;
+            float: right;
+          }
+        }
+      }
+    }
+  }
+
+  .sidefield {
+    padding: 0 !important;
+    img {
+      width: 100%;
+      height: 250px;
+    }
+  }
+}
+//Content ends
+
+@media screen and (max-width: 575px) {
+  .content {
+    .searchbox {
+      margin: 0 0 30px 0;
+      .searchbox-icon-btn {
+        top: 15px;
+      }
+    }
+
+    .blogbox {
+      margin: 0.5rem 0.5rem 3rem 0.5rem;
+    }
+    .blogs {
+      img {
+        height: 200px;
+      }
+
+      .blogdesc {
+        border: 0px solid #ccc;
+        border-radius: 5px;
+        h4 {
+          font-size: 1.2rem;
+          line-height: 1.8rem;
+          font-weight: 600;
+          padding: 10px 5px !important;
+        }
+        p {
+          line-height: 1.7rem;
+          padding: 0 5px;
+        }
+        .blog-statusbox {
+          padding: 0;
+          a {
+            font-size: 14px;
+            padding: 0px;
+            &:last-child,
+            &:nth-child(2) {
+              float: none;
+              padding: 0 0 0 30px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
