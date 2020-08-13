@@ -6,8 +6,8 @@ import Blogs from "./components/Blogs";
 import Categories from "./components/Categories";
 import Support from "./components/Support";
 import Page404 from "./layouts/Page404";
-import "./App.css";
 import BlogView from "./components/BlogView";
+import "./App.css";
 
 function App() {
   return (
