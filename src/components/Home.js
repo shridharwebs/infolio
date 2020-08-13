@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import "../components/Home.css";
+import "../components/Home.scss";
 import jQuery from "jquery";
 
 const Home = () => {

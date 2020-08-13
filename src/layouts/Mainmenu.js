@@ -1,79 +1,67 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 import "../layouts/Mainmenu.scss";
 
 const Mainmenu = () => {
   return (
     <Fragment>
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="container">
-          <a href="#" class="navbar-brand">
+      <nav className="navbar navbar-expand-md navbar-dark">
+        <div className="container">
+          <a href="#" className="navbar-brand">
             <img src={require("../assets/img/1.png")}></img>CodeBugi
           </a>
           <button
             type="button"
-            class="navbar-toggler collapsed"
+            className="navbar-toggler collapsed"
             data-toggle="collapse"
             data-target="#main-nav"
           >
-            <span class="menu-icon-bar"></span>
-            <span class="menu-icon-bar"></span>
-            <span class="menu-icon-bar"></span>
+            <span className="menu-icon-bar"></span>
+            <span className="menu-icon-bar"></span>
+            <span className="menu-icon-bar"></span>
           </button>
 
-          <div id="main-nav" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
+          <div id="main-nav" className="collapse navbar-collapse">
+            <ul className="navbar-nav ml-auto">
               <li>
-                <a href="#" class="nav-item nav-link active">
+                <Link to="/" className="nav-item nav-link active">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" class="nav-item nav-link">
-                  About Us
-                </a>
+                <Link to="/blogs" className="nav-item nav-link">
+                  Recent Blogs
+                </Link>
               </li>
-              <li class="dropdown">
-                <a href="#" class="nav-item nav-link" data-toggle="dropdown">
-                  Services
-                </a>
-                <div class="dropdown-menu">
-                  <a href="#" class="dropdown-item">
+              <li>
+                <Link to="/categories" className="nav-item nav-link">
+                  Recent Blogs
+                </Link>
+              </li>
+              <li className="dropdown">
+                <Link
+                  to="/categories"
+                  className="nav-item nav-link"
+                  data-toggle="dropdown"
+                >
+                  List
+                </Link>
+                <div className="dropdown-menu">
+                  <Link to="/list" className="dropdown-item">
                     Dropdown Item 1
-                  </a>
-                  <a href="#" class="dropdown-item">
+                  </Link>
+                  <a href="#" className="dropdown-item">
                     Dropdown Item 2
                   </a>
-                  <a href="#" class="dropdown-item">
+                  <a href="#" className="dropdown-item">
                     Dropdown Item 3
                   </a>
                 </div>
               </li>
-              <li class="dropdown">
-                <a href="#" class="nav-item nav-link" data-toggle="dropdown">
-                  Portfolio
-                </a>
-                <div class="dropdown-menu">
-                  <a href="#" class="dropdown-item">
-                    Dropdown Item 1
-                  </a>
-                  <a href="#" class="dropdown-item">
-                    Dropdown Item 2
-                  </a>
-                  <a href="#" class="dropdown-item">
-                    Dropdown Item 3
-                  </a>
-                  <a href="#" class="dropdown-item">
-                    Dropdown Item 4
-                  </a>
-                  <a href="#" class="dropdown-item">
-                    Dropdown Item 5
-                  </a>
-                </div>
-              </li>
               <li>
-                <a href="#" class="nav-item nav-link">
-                  Contact
-                </a>
+                <Link to="/Support" className="nav-item nav-link">
+                  Support
+                </Link>
               </li>
             </ul>
           </div>
